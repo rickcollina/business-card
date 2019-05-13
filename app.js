@@ -44,6 +44,8 @@ server.get('/files/RicardoLetterofRecommendation.pdf', (req, res) => {
 
 
 
+
+
 server.get('/vendor/fontawesome-free/webfonts/fa-brands-400.ttf', (req, res) => {
   res.sendFile(__dirname + '/vendor/fontawesome-free/webfonts/fa-brands-400.ttf');
 })
@@ -67,6 +69,11 @@ server.get('/vendor/fontawesome-free/webfonts/fa-regular-400.woff2', (req, res) 
 server.get('/vendor/fontawesome-free/webfonts/fa-regular-400.woff', (req, res) => {
   res.sendFile(__dirname + '/vendor/fontawesome-free/webfonts/fa-regular-400.woff');
 })
+
+server.get('/img/favicon.ico', (req, res) => {
+  res.sendFile(__dirname + '/img/favicon.ico');
+})
+
 
 
 
