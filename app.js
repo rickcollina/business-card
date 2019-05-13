@@ -81,7 +81,7 @@ server.get('/vendor/fontawesome-free/webfonts/fa-regular-400.woff', (req, res) =
 
 
 
-const port = 8000;
+const port = 3000;
 server.listen(port, function() {
   console.log('server listening on port ' + port)
 })
