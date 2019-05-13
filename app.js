@@ -1,8 +1,4 @@
 
-
-
-
-
 const express = require('express')
 const server = express()
 
@@ -41,6 +37,11 @@ server.get('/img/RicardoFoto.jpg', (req, res) => {
   res.sendFile(__dirname + '/img/RicardoFoto.jpg');
 })
 
+server.get('/files/RicardoLetterofRecommendation.pdf', (req, res) => {
+  res.sendFile(__dirname + '/files/RicardoLetterofRecommendation.pdf');
+})
+
+
 
 
 server.get('/vendor/fontawesome-free/webfonts/fa-brands-400.ttf', (req, res) => {
@@ -66,18 +67,6 @@ server.get('/vendor/fontawesome-free/webfonts/fa-regular-400.woff2', (req, res) 
 server.get('/vendor/fontawesome-free/webfonts/fa-regular-400.woff', (req, res) => {
   res.sendFile(__dirname + '/vendor/fontawesome-free/webfonts/fa-regular-400.woff');
 })
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
